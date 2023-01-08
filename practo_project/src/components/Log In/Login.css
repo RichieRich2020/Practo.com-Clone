@@ -1,0 +1,149 @@
+
+.log-App {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    /* border: solid red; */
+    width: 70%;
+  }
+  
+  
+  
+  
+  
+  .loginn{
+    /* border: solid red; */
+    width: 25%;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  
+  .log{
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .log:hover{
+    color: #61dafb;
+  }
+  
+  .sign{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sign:hover{
+    text-decoration: underline;
+  }
+  
+  .contain{
+    /* border: solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .picc{
+    /* border: solid red; */
+    margin-left: 4%;
+    width: 47%;
+    margin-top: 7%;
+  }
+  
+  .info{
+    /* border: solid red; */
+    text-align: left;
+    margin-left: 5%;
+    width: 46%;
+    margin-top: 7%; 
+  }
+
+  #formm{
+    padding: 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 3%;
+  }
+ 
+  #mobile{
+    padding: 2%;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-left: -1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  #passcode{
+    
+         padding: 2%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        border-radius: 5px;
+  }
+  
+  #submit{
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: -5%;
+    margin-top: 3%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    background-color: cyan;
+    cursor: pointer;
+    
+  }
+
+  #para{
+    margin-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-bottom: 3%;
+  }
+  
+  .logos{
+    width: 100%;
+  }
+
+  #labelss{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  #parag{
+    margin-top: 10%;
+  }
+  #links{
+    text-decoration: none;
+    
+  }
+  #log-design{
+    border: solid white;
+    padding-bottom: 7%;
+    border-bottom-color: #61dafb;
+    border-width: 3%;
+    
+  }
+
+  .lines{
+    margin-top: 0.1%;
+  }

@@ -1,0 +1,170 @@
+.Appss {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    /* border: solid red; */
+    width: 70%;
+  }
+  
+  
+  
+  
+  
+  .signupp{
+    /* border: solid red; */
+    width: 25%;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  
+  .signs{
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .signs:hover{
+    color:#61dafb;
+  }
+  
+  .logs{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .logs:hover{
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .contain{
+    /* border: solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .picc{
+    /* border: solid red; */
+    margin-left: 4%;
+    width: 50%;
+    margin-top: 7%;
+  }
+  
+  .infos{
+    /* border: solid red; */
+    text-align: left;
+    margin-left: 5%;
+    width: 46%;
+    margin-top: 7%;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+   
+  }
+
+  #joinn{
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  #formms{
+    padding: 5%;
+    
+  }
+ 
+
+  #name{
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+  }
+  select{
+    padding:2.8%;
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+  }
+  #mobiles{
+    padding: 2.8%;
+    width: 67.1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+  }
+
+  #passcode{
+    
+         padding: 3%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        border-radius: 5px;
+  }
+  
+  #submit{
+    padding: 4%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    background-color: cyan;
+    cursor: pointer;
+    
+  }
+
+  #paras{
+    margin-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #checking{
+    display: flex;
+  }
+
+  #checkboxx{
+    margin-top: -5.5%;
+  }
+  
+  .logos{
+    width: 100%;
+  }
+
+  #parags{
+    margin-top: 10%;
+  }
+  #linkss{
+    text-decoration: none;
+    
+  }
+
+  #sign-designs{
+    border: solid white;
+    padding-bottom: 7%;
+    border-bottom-color: #61dafb;
+    border-width: 3%;
+    
+  }
