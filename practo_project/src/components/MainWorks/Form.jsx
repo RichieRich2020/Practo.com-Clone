@@ -15,9 +15,10 @@ function Form() {
 
 const user=(e)=>{
     const {name,value}=e.target;
-
-    setUserCard({...userCard,name:value})
+    setUserCard({...userCard,[name]:value})
 }
+if(userCard.cvc.length==3)
+console.log(userCard)
 
     return (
         <>
@@ -29,10 +30,7 @@ const user=(e)=>{
         <input type="password" name="cvc" id="cvc" placeholder="CVC/CVV" onChange={user}/>
         <input type="password" placeholder="Enter your pin" id="pass" name="pin"onChange={user}/><br />
         <button disabled={
-
-userCard.name&&userCard.card.length==16&&userCard.exp&&userCard.cvc.length==3&&userCard.pin>=4&&userCard.pin<=6?true:false
-
-
+(userCard.name&&(userCard.card.length==16)&&(userCard.exp.length==5)&&(userCard.cvc.length==3)&&(userCard.pin.length>=4)&&userCard.pin.length<=6)?false:true
         } style={{ margin:"0px",
                 padding:"0px", backgroundColor: "cornflowerblue",
                 marginBottom: "20px",  alignItems: "center",
