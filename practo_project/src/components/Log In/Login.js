@@ -83,6 +83,7 @@ const Login = () => {
 
     return (
         <>
+        <section>
            <div className="log-App">
               <div className="loginn">
                 <div id='log-design'>
@@ -106,7 +107,7 @@ const Login = () => {
 
 
              <div className="info">
-                {/* <section> */}
+                
                         <Form id='formm'>
 
                             <Form.Group>
@@ -125,17 +126,16 @@ const Login = () => {
                             </Form.Group>
 
                             <Button  id='submit' onClick={addData} type="submit">
-                                Submit
+                                Login
                             </Button>
                             <p id='parag'>Don't Have an Account <span><NavLink id='links' to="./Signup">Register</NavLink></span> </p>
                             
                         </Form>
-                       
-                {/* </section> */}
                 <ToastContainer />
             </div>
         </div>
     </div>
+    </section>
         </>
     )
 }
