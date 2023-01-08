@@ -32,12 +32,24 @@ function Doc4ui(){
                 </div>
             </div>
             <div className={Styles.p4div12}>
-                <h3> <b>Enter your mobile number</b> </h3>
+            <h3> <b>Please provides details about name</b> </h3>
+                <label htmlFor="">Name</label> <br />
+                <input type="text"  name="" placeholder="Enter Name" /><br />
                 <label htmlFor="">Mobile</label> <br />
-                <input type="number" name="" id=""placeholder="Enter Mobile" />
-                <p>You will receive an OTP shortly. <br /> <span>We will send appointment-related communications on this number.</span> </p>
-                <p></p>
-                <button disabled="disabled">Continue</button>
+                <input type="number" className={Styles.in2} name="" placeholder="Enter Mobile" /><br />
+                <label htmlFor="">Email</label> <br />
+                <input type="email" className={Styles.in2} name="" placeholder="Your Email" /><br />
+            <p>Choose a payment option to book appoinments.</p>
+                <div className={Styles.in2}>
+                <input type="radio" name="kkk" id=""  value="cash"/>
+                <span><label htmlFor="cashon">Pay Online</label></span>
+                </div>
+                <div className={Styles.in2}>
+                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label for="cashdi">Pay later at the clinic</label>
+                </div>
+                
+                <button className={Styles.bt2} disabled="disabled">Confirm Clinic Visit</button>
             </div>
         </div>
         </>

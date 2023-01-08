@@ -156,12 +156,21 @@ li{
     border-radius: 5px;
     flex: 3;
 }
-.p4div12 input  {
+.p4div12 > input {
     width: 95%;
     padding: 4px;
+}
+.in2{
+    width: 97%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-bottom: 5px;
+    padding: 4px;
+
 }
 button{
     width: 100%;
     padding: 2px;
 }
-
+.bt2{
+    background-color: #434ea2;
+}
