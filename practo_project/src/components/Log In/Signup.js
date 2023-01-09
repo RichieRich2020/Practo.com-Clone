@@ -67,122 +67,86 @@ const Signup = () => {
 
   return (
     <>
-      <div className='Appss'>
-        <div className='signupp'>
+      <section>
+        <div className="Appss">
+          <div className="signupp">
           <div id='log-designs'>
-            <NavLink className='logs' to='/login'>
-              Login
-            </NavLink>
-          </div>
-
-          <div id='sign-designs'>
-            <NavLink className='signs' to='/signup'>
-              Register
-            </NavLink>
-          </div>
-        </div>
-        <hr className='lines'></hr>
-        <div className='contain'>
-          <div className='picc'>
-            <img
-              className='logos'
-              src='https://accounts.practo.com/static/images/illustration.png'></img>
-          </div>
-
-          <div className='infos'>
-            {/* <section> */}
-            <h2 id='joinn'>Join Practo</h2>
-            <hr />
-            <Form id='formms'>
-              <Form.Group>
-                <label id='labelss' for='name'>
-                  Full Name
-                </label>
-                <br></br>
-                <input
-                  id='name'
-                  type='text'
-                  name='name'
-                  onChange={getdata}
-                  placeholder='Full Name'
-                />
-              </Form.Group>
-              <Form.Group>
-                <label id='labelss' for='mobile'>
-                  Mobile Number
-                </label>
-                <br></br>
-                <select onClick={getdata} value={data.country_code}>
-                  <option>+91(IND)</option>
-                  <option>+65(SGP)</option>
-                  <option>+63(PHL)</option>
-                  <option>+60(MYS)</option>
-                  <option>+62(IDN)</option>
-                  <option>+55(BRA)</option>
-                  <option>+52(MEX)</option>
-                  <option>+54(ARG)</option>
-                  <option>+56(CHL)</option>
-                  <option>+84(VNM)</option>
-                  <option>+971(UAE)</option>
-                </select>
-                <input
-                  id='mobiles'
-                  type='number'
-                  name='mobile'
-                  onChange={getdata}
-                  placeholder='Mobile Number'
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <label id='labelss' for='passcode'>
-                  Create Password
-                </label>
-                <br></br>
-                <input
-                  id='passcode'
-                  type='password'
-                  name='password'
-                  onChange={getdata}
-                  placeholder='Password'
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <div id='checking'>
-                  <input id='checkboxx' type='checkbox' />
-                  <label id='paras'>
-                    Receive relevant offers and promotional communication from
-                    Practo
-                  </label>
+            <NavLink className="logs" to="./Login">Login</NavLink>
+            </div>
+           
+           <div id="sign-designs">
+           <NavLink className="signs" to="./Signup">Register</NavLink>
+           </div>
+           </div>
+           <hr className="lines"></hr>
+             <div className="contain">
+                <div className="piccs">
+                   <img className="logos" src="https://accounts.practo.com/static/images/illustration.png"></img>
                 </div>
-              </Form.Group>
 
-              <Button
-                variant='primary'
-                id='submit'
-                onClick={addData}
-                type='submit'>
-                Submit
-              </Button>
-              <p id='parags'>
-                Already Have an Account{' '}
-                <span>
-                  <NavLink id='linkss' to='./Login'>
-                    Login
-                  </NavLink>
-                </span>{' '}
-              </p>
-            </Form>
 
-            {/* <SIgn_img /> */}
-            {/* </section> */}
+
+
+        <div className="infos">
+            
+                     
+                    <Form  id='formms'>
+                        <Form.Group>
+                        <h2 id='joinn'>Join Practo</h2>
+                
+                          <hr/>
+                        </Form.Group>
+
+                        <Form.Group>
+                            <label id='labelss' for="name">Full Name</label><br></br>
+                            <input  id='name' type="text" name='name' onChange={getdata} placeholder="Full Name" />
+                        </Form.Group>
+                        <Form.Group>
+                            <label id='labelss' for="mobile">Mobile Number</label><br></br>
+                            <select id='sel' onClick={getdata}
+                                    value={data.country_code}>
+                                        <option>+91(IND)</option>
+                                        <option>+65(SGP)</option>
+                                        <option>+63(PHL)</option>
+                                        <option>+60(MYS)</option>
+                                        <option>+62(IDN)</option>
+                                        <option>+55(BRA)</option>
+                                        <option>+52(MEX)</option>
+                                        <option>+54(ARG)</option>
+                                        <option>+56(CHL)</option>
+                                        <option>+84(VNM)</option>
+                                        <option>+971(UAE)</option>
+                            </select>
+                            <input id='mobiles'  type="number" name='mobile' onChange={getdata} placeholder="Mobile Number" />
+                        </Form.Group>
+
+
+                        <Form.Group>
+                             <label  id='labelss' for="passcode">Create Password</label><br></br>
+                            <input  id='passcode'  type="password" name='password' onChange={getdata} placeholder="Password" />
+                        </Form.Group>
+
+                        <Form.Group>
+                        <div id='checking'>
+                           <input id='checkboxx' type='checkbox'/>
+                          <label id='paras'>Receive relevant offers and promotional communication from Practo</label>
+                        </div>
+                        </Form.Group>
+
+                        <Button variant="primary"id='submit' onClick={addData} type="submit">
+                            Register
+                        </Button>
+                        <p id='parags'>Already Have an Account <span><NavLink id='linkss' to="./Login">Login</NavLink></span> </p>
+                    </Form>
+                   
+            
             <ToastContainer />
-          </div>
         </div>
-      </div>
+     </div>
+</div>
+</section>
     </>
-  );
-};
+)
+}
 
-export default Signup;
+export default Signup
