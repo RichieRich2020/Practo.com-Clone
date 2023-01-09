@@ -8,7 +8,7 @@ import Input from './Input';
 import Rcent from './Rcent';
 import ControlledCarousel from './ControlledCarousel';
 import MultipleItems from './Slid';
-import AppointmentScheduler from './caldender';
+
 import REwor from './REwor';
 const Landing_page = () => {
   return (

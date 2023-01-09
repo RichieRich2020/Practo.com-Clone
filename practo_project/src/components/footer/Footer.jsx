@@ -9,6 +9,7 @@ const Footer = () => {
         id={styles.kll}
         style={{
           //   display: 'flex',
+          marginTop: '30px',
           backgroundColor: '#28328c',
           textAlign: 'center',
           paddingBottom: '50px',

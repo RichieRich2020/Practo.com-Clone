@@ -7,7 +7,7 @@ const Cards = () => {
     {
       dimg: 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png',
       title: 'Instant Video Consultation',
-      title2: 'Connect within 60 secs',
+      title2: 'Connect within  60 secs',
       background: ' #AFCFED',
     },
     {

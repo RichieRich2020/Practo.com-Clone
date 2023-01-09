@@ -1,15 +1,20 @@
 /** @format */
 
-import React from 'react';
-import Popo from '../Popo';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import st from './nabar.module.css';
+import { useSelector } from 'react-redux';
 
 const NAvbar = () => {
-  function open() {}
+  const data = useSelector((store) => {
+    return store;
+  });
   return (
     <>
       <div
         style={{
+          marginBottom: '20px',
           //   position: 'fixed',
           //   top: 0,
 
@@ -17,7 +22,7 @@ const NAvbar = () => {
           //   zIndex: 9999,
           display: 'flex',
           alignItems: 'center',
-          paddingRight: '40px',
+          paddingRight: '20px',
           gap: '150px',
           //   background: '#fff',
           borderBottom: '2px solid #f0f0f5',
@@ -51,12 +56,21 @@ const NAvbar = () => {
               alt=''
             />
           </div>
-          <div id={st.fin}>
-            <p>Find Doctors</p>
-            <p>Video Consult</p>
-            <p>Medicines</p>
-            <p>Lab Tests</p>
-            <p>Surgeries</p>
+          <div id={st.fin} style={{ fontSize: '28px' }}>
+            <Link
+              to='/dashboard'
+              style={{
+                textDecoration: 'none',
+                color: '#414146',
+                cursor: 'pointer',
+              }}>
+              <p style={{ fontSize: '16px' }}>Find Doctors</p>
+            </Link>
+
+            <p style={{ fontSize: '16px' }}>Video Consult</p>
+            <p style={{ fontSize: '16px' }}>Medicines</p>
+            <p style={{ fontSize: '16px' }}>Lab Tests</p>
+            <p style={{ fontSize: '16px' }}>Surgeries</p>
           </div>
         </div>
         <div
@@ -72,26 +86,46 @@ const NAvbar = () => {
           }}>
           <div id={st.mai}>
             <div style={{ display: 'flex' }}>
-              <p>For Corporates</p>
+              <p style={{ fontSize: '15px' }}>For Corporates</p>
               <div style={{ marginTop: '3px' }}>
                 <span class='material-symbols-outlined'>expand_more</span>
               </div>
             </div>
             <div style={{ display: 'flex' }}>
-              <p>For Providers</p>
+              <p style={{ fontSize: '15px' }}>For Providers</p>
               <div style={{ marginTop: '3px' }}>
                 <span class='material-symbols-outlined'>expand_more</span>
               </div>
             </div>
             <div style={{ display: 'flex' }}>
-              <p>Security & help</p>
+              <p style={{ fontSize: '15px' }}>Security & help</p>
               <div style={{ marginTop: '3px' }}>
                 <span class='material-symbols-outlined'>expand_more</span>
               </div>
             </div>
           </div>
-          <div style={{ display: 'flex' }} onClick={open}>
-            <p>username</p>
+          <div style={{ display: 'flex' }}>
+            {data.isAuth ? (
+              <Link
+                to='/user'
+                style={{
+                  textDecoration: 'none',
+                  color: '#414146',
+                  cursor: 'pointer',
+                }}>
+                <p style={{ fontSize: '15px' }}>{data.logindetail.name}</p>
+              </Link>
+            ) : (
+              <Link
+                to='/login'
+                style={{
+                  textDecoration: 'none',
+                  color: '#414146',
+                  cursor: 'pointer',
+                }}>
+                <p style={{ fontSize: '15px' }}>Login/SignUp</p>
+              </Link>
+            )}
             <div style={{ marginTop: '3px' }}>
               <span class='material-symbols-outlined'>expand_more</span>
             </div>

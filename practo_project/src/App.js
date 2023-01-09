@@ -1,13 +1,21 @@
 /** @format */
 
-import logo from './logo.svg';
 import './App.css';
-import Dumm from './components/Dumm';
 
+import NAvbar from './components/Navbar/NAvbar';
+import Footer from './components/footer/Footer';
+import Allroute from './components/main_routes/Allroute';
+import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <div className='App'>
-      <Dumm />
+       <BrowserRouter>
+      <NAvbar />
+     
+        <Allroute />
+     
+      <Footer />
+      </BrowserRouter>
     </div>
   );
 }
