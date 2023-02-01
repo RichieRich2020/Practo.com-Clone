@@ -26,12 +26,12 @@ Netlify Link :- https://zoomcar-clone-vanilla-js.netlify.app/
     
 ### Login page
 
-<image src="./z2.png">
+<image src="practo_project/src/components/p2.png">
 
 ### Product Page
 
-<image src="./z3.png">
+<image src="practo_project/src/components/p3.png">
 
 ### Products detail
 
-<image src="./z4.png">
+<image src="practo_project/src/components/p4.png">
